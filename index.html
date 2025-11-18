@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kantin Kampus — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Kantin Senja</h1>
+      <nav class="main-nav">
+        <a href="index.html">Beranda</a>
+        <a href="promo.html">Promo</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="login.html" class="btn small">Masuk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Menu Favorit Mahasiswa</h2>
+      <p>Pesan cepat, bayar mudah, dan nikmati diskon khusus mahasiswa.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn">Lihat Menu</a>
+        <a href="promo.html" class="btn ghost">Lihat Promo</a>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <h2>Menu Hari Ini</h2>
+      <div class="cards">
+        <div class="cards">
+
+  <div class="card">
+  <img src="img/nasi goreng.jpg" alt="nasi goreng">
+  <h3>Nasi Goreng</h3>
+  <p class="price">12.000</p>
+  <button class="btn small" onclick="tambahKeranjang('Nasi Goreng', 12000)">Tambah</button>
+</div>
+
+
+  <div class="card">
+  <img src="img/ayam geprek.jpg" alt="ayam geprek">
+  <h3>Ayam Geprek</h3>
+  <p class="price">15.000</p>
+  <button class="btn small" onclick="tambahKeranjang('Ayam Geprek', 15000)">Tambah</button>
+</div>
+
+
+ <div class="card">
+  <img src="img/es teh manis.jpg" alt="es teh manis">
+  <h3>Es Teh Manis</h3>
+  <p class="price">20.000</p>
+  <button class="btn small" onclick="tambahKeranjang('Es Teh Manis', 5000)">Tambah</button>
+</div>
+
+<div class="card">
+  <img src="img/gorengan.jpg" alt="gorengan">
+  <h3>Gorengan</h3>
+  <p class="price">10.000</p>
+  <button class="btn small" onclick="tambahKeranjang('gorengan', 12000)">Tambah</button>
+</div>
+
+<div class="card">
+  <img src="img/mie cakalang.jpg" alt="mie cakalang">
+  <h3>Mie Cakalang</h3>
+  <p class="price">15.000</p>
+  <button class="btn small" onclick="tambahKeranjang('mie cakalang', 12000)">Tambah</button>
+</div>
+
+<div class="card">
+  <img src="img/nutri.jpg" alt="nutri">
+  <h3>Nutrisari</h3>
+  <p class="price">7.000</p>
+  <button class="btn small" onclick="tambahKeranjang('nutri', 12000)">Tambah</button>
+</div>
+<div class="card">
+  <img src="img/tinu.jpg" alt="tinu">
+  <h3>Tinutuan</h3>
+  <p class="price">10.000</p>
+  <button class="btn small" onclick="tambahKeranjang('tinu', 12000)">Tambah</button>
+</div>
+<div class="card">
+  <img src="img/eskepal.jpg" alt="eskepal">
+  <h3>Es Kepal</h3>
+  <p class="price">11.000</p>
+  <button class="btn small" onclick="tambahKeranjang('eskepal', 12000)">Tambah</button>
+</div>
+
+
+
+
+</div>
+
+      </div>
+
+      <div class="cart-panel">
+        <h4>Keranjang</h4>
+        <ul id="cart-items"></ul>
+        <p class="total">Total: <span id="cart-total">Rp0</span></p>
+        <div class="cart-actions">
+          <button class="btn ghost" onclick="kosongkanKeranjang()">Kosongkan</button>
+          <button class="btn" onclick="checkout()">Checkout</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Kantin Senja — Dibuat oleh shelamita nansy mantiri</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

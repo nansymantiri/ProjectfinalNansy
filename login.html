@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Kantin Senja</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Kantin senja</h1>
+      <nav class="main-nav">
+        <a href="index.html">Beranda</a>
+        <a href="promo.html">Promo</a>
+        <a href="tentang.html">Tentang</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container auth">
+    <section class="card auth-card">
+      <h2>Masuk</h2>
+      <form onsubmit="return login(event)">
+        <label>Username
+          <input type="text" id="username" required />
+        </label>
+        <label>Password
+          <input type="password" id="password" required />
+        </label>
+        <div class="auth-actions">
+          <button class="btn" type="submit">Masuk</button>
+          <a href="index.html" class="btn ghost">Kembali</a>
+        </div>
+      </form>
+      <p class="muted">(Untuk log: username <code>mahasiswa</code> password <code>kantin</code>)</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Kantin senja</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
